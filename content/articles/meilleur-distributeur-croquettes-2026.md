@@ -19,13 +19,13 @@ Dans cette catégorie, la qualité fait toute la différence. Un produit adapté
 
 Ce produit a été sélectionné pour son excellent rapport qualité-prix dans cette catégorie. Vérifiez les avis clients et les promotions en cours avant de commander.
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0DISTRIB01)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=distributeur%20croquettes%20automatique)
 
 ### 2. Produit deuxième recommandé
 
 Ce produit a été sélectionné pour son excellent rapport qualité-prix dans cette catégorie. Vérifiez les avis clients et les promotions en cours avant de commander.
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0DISTRIB02)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=distributeur%20croquettes%20automatique%20programmable)
 
 ## Comment bien choisir
 

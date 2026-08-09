@@ -24,7 +24,7 @@ Neuf reliefs en spirale obligent votre chien à contourner chaque obstacle pour 
 - **Points forts :** très efficace, antidérapante, lavable
 - **Prix :** environ 15 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0GAMELLE01)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=gamelle%20anti%20glouton%20chien)
 
 ### 2. Gamelle anti-glouton avec ventouse
 
@@ -33,7 +33,7 @@ La base à ventouse maintient la gamelle au sol : impossible de la retourner. In
 - **Points forts :** anti-retournement, silicone de qualité
 - **Prix :** environ 12 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0GAMELLE02)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=gamelle%20anti%20glouton%20ventouse)
 
 ### 3. Gamelle en acier avec reliefs
 
@@ -42,7 +42,7 @@ L'acier inoxydable avec obstacle central ralentit la prise tout en étant plus h
 - **Points forts :** hygiène, robustesse
 - **Prix :** environ 18 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0GAMELLE03)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=gamelle%20anti%20glouton%20acier)
 
 ### 4. Gamelle lente pour grandes races
 
@@ -52,7 +52,7 @@ Un diamètre XL et des reliefs adaptés pour les mâchoires des grands chiens. C
 - **Points forts :** taille XL, très robuste
 - **Prix :** environ 20 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0GAMELLE04)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=gamelle%20anti%20glouton%20grande%20race)
 
 ### 5. Gamelle avec distributeur de croquettes intégré
 
@@ -61,7 +61,7 @@ En plus de ralentir, elle distribue les croquettes en petite quantité. Le repas
 - **Points forts :** très efficace, ludique
 - **Prix :** environ 22 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0GAMELLE05)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=gamelle%20distributeur%20croquettes%20chien)
 
 ## Comment choisir la bonne gamelle anti-glouton
 

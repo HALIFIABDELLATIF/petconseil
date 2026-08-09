@@ -24,7 +24,7 @@ Détecte le poids de votre chat, s'auto-nettoie 5 minutes après son passage et 
 - **Points forts :** silencieuse, appli mobile, aucun sachet à fixer
 - **Prix :** environ 450 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0LITIERE01)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=litiere%20automatique%20chat)
 
 ### 2. Litière automatique à tambour rotatif
 
@@ -33,7 +33,7 @@ Le système à tambour retourne la litière et tamise les déchets dans un compa
 - **Points forts :** compartiment anti-odeurs, faible consommation
 - **Prix :** environ 350 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0LITIERE02)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=litiere%20automatique%20tambour)
 
 ### 3. Litière automatique économique à racloir
 
@@ -42,7 +42,7 @@ Le modèle le plus abordable : un racloir électrique qui pousse les déchets da
 - **Points forts :** simple, prix doux
 - **Prix :** environ 180 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0LITIERE03)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=litiere%20automatique%20racloir)
 
 ### 4. Litière automatique connectée avec caméra
 
@@ -51,7 +51,7 @@ En plus du nettoyage automatique, elle intègre une caméra pour surveiller votr
 - **Points forts :** caméra, détection de santé (fréquence de passage)
 - **Prix :** environ 550 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0LITIERE04)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=litiere%20automatique%20connectee%20camera)
 
 ### 5. Litière automatique silencieuse pour appartement
 
@@ -60,7 +60,7 @@ Le niveau sonore est réduit au minimum (moins de 30 dB), idéal pour les petits
 - **Points forts :** ultra silencieuse, compacte
 - **Prix :** environ 400 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0LITIERE05)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=litiere%20automatique%20silencieuse)
 
 ## Comment choisir une litière automatique
 

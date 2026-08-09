@@ -24,7 +24,7 @@ Localisation en temps réel, zone de sécurité avec alerte si le chien sort, et
 - **Points forts :** alerte de fuite immédiate, géofence
 - **Prix :** environ 100 € + abonnement 6 €/mois
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B08K3XYZ01)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=gps%20chien%20traceur)
 
 ### 2. GPS sans abonnement avec carte SIM libre
 
@@ -33,7 +33,7 @@ Vous choisissez vous-même votre opérateur, ce qui peut réduire fortement les 
 - **Points forts :** zéro abonnement imposé
 - **Prix :** environ 120 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B07L8ABCDE2)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=gps%20chien%20sans%20abonnement)
 
 ### 3. Traceur GPS étanche pour chasseurs
 
@@ -42,7 +42,7 @@ Conçu pour résister à l'eau, la boue et les chocs. Le meilleur choix pour les
 - **Points forts :** étanchéité IP68, portée étendue
 - **Prix :** environ 150 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B09X5FGHIJ)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=gps%20chien%20chasse%20etanche)
 
 ### 4. GPS avec lampe LED et sonnette
 
@@ -51,7 +51,7 @@ Le collier traceur le plus pratique : il intègre une lampe pour les sorties noc
 - **Points forts :** polyvalence, visibilité la nuit
 - **Prix :** environ 90 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B06KLMNOP1)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=gps%20chien%20lampe%20led)
 
 ### 5. Mini traceur pour petits chiens
 
@@ -61,7 +61,7 @@ Léger et compact, conçu pour les chiens de petite taille qui pourraient être 
 - **Points forts :** ultra-léger, discret
 - **Prix :** environ 85 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B01QRSTUV2)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=gps%20chien%20petit%20chien)
 
 ### 6. Traceur GPS longue autonomie
 
@@ -71,7 +71,7 @@ Trois semaines d'autonomie grâce à une batterie optimisée. Parfait si vous ou
 - **Points forts :** recharge rare, alerte de fuite
 - **Prix :** environ 110 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0AXYZW23)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=gps%20chien%20longue%20autonomie)
 
 ## Comment choisir le bon GPS pour chien
 

@@ -24,7 +24,7 @@ Stable, haut de 1,80 m, avec une maisonnette, deux hamacs et un griffoir en sisa
 - **Points forts :** très stable, sisal résistant
 - **Prix :** environ 90 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B08K3XYZ01)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=arbre%20a%20chat%20xxl)
 
 ### 2. Arbre à chat mural
 
@@ -33,7 +33,7 @@ Parfait pour les petits appartements, il se fixe au mur et permet au chat de gri
 - **Points forts :** gain de place maximal
 - **Prix :** environ 45 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B07L8ABCDE2)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=arbre%20a%20chat%20mural)
 
 ### 3. Arbre à chat design en bois naturel
 
@@ -42,7 +42,7 @@ Un modèle esthétique qui se fond dans votre intérieur, en bois véritable et 
 - **Points forts :** design premium, matériaux nobles
 - **Prix :** environ 130 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B09X5FGHIJ)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=arbre%20a%20chat%20bois%20naturel)
 
 ### 4. Arbre à chat économico pour débuter
 
@@ -51,7 +51,7 @@ Un modèle d'entrée de gamme parfait pour tester. Peut-être moins durable, mai
 - **Hauteur :** 100 cm
 - **Prix :** environ 35 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B06KLMNOP1)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=arbre%20a%20chat%20economique)
 
 ### 5. Arbre à chat pour chats lourds / races à poil long
 
@@ -60,7 +60,7 @@ Des plateaux plus larges et une base renforcée pour les Maine Coon et autres gr
 - **Points forts :** conçu pour les chats de plus de 6 kg
 - **Prix :** environ 110 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B01QRSTUV2)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=arbre%20a%20chat%20grande%20race)
 
 ### 6. Arbre à chat avec tunnel et balles
 
@@ -69,7 +69,7 @@ Le modèle le plus ludique : tunnel suspendu, balles et plumeau pour occuper les
 - **Points forts :** très interactif
 - **Prix :** environ 75 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0AXYZW23)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=arbre%20a%20chat%20tunnel)
 
 ## Comment choisir un arbre à chat solide
 

@@ -23,7 +23,7 @@ Un classique indémodable : il roule, rebondit et libère les friandises au fur 
 - **Points forts :** réglage de difficulté, caoutchouc durable
 - **Prix :** environ 15 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0JOUET01)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=ballon%20distributeur%20friandises%20chien)
 
 ### 2. Tapis de fouille à friandises
 
@@ -32,7 +32,7 @@ Cinq minutes de fouille équivalent à une promenade : votre chien doit utiliser
 - **Points forts :** lavable en machine, antidérapant
 - **Prix :** environ 22 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0JOUET02)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=tapis%20fouille%20friandises%20chien)
 
 ### 3. Puzzle à tiroirs coulissants
 
@@ -41,7 +41,7 @@ Un jeu de réflexion en 3 niveaux de difficulté. Votre chien doit pousser les t
 - **Points forts :** stimulateur mental, 3 niveaux
 - **Prix :** environ 25 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0JOUET03)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=puzzle%20chien%20tiroirs)
 
 ### 4. Jouet kong classique
 
@@ -50,7 +50,7 @@ Le célèbre cône en caoutchouc se remplit de pâtée ou de friandises et se co
 - **Points forts :** indestructible, se congèle pour durer plus longtemps
 - **Prix :** environ 12 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0JOUET04)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=kong%20chien)
 
 ### 5. Bouteille à grignoter pour grands chiens
 
@@ -59,7 +59,7 @@ Un jouet géant qui se remplit de friandises et roule au sol. Conçu pour les ch
 - **Points forts :** très résistant, taille XL
 - **Prix :** environ 20 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0JOUET05)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=jouet%20distributeur%20friandises%20grand%20chien)
 
 ### 6. Jouet en sisal à suspendre
 
@@ -68,7 +68,7 @@ Les friandises sont coincées dans un cordage en sisal à suspendre à un arbre 
 - **Points forts :** bon pour les dents, activité physique
 - **Prix :** environ 18 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0JOUET06)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=jouet%20sisal%20suspendre%20chien)
 
 ### 7. Gourde distributeur incassable
 
@@ -77,7 +77,7 @@ Pour les chiots qui mordillent tout, une gourde en plastique dur alimentaire ave
 - **Points forts :** adapté aux chiots, plastique alimentaire
 - **Prix :** environ 14 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0JOUET07)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=jouet%20distributeur%20chiot)
 
 ### 8. Jouet puzzle à friandises à cache-cache
 
@@ -86,7 +86,7 @@ Trois cônes à renverser pour trouver la friandise cachée dessous. Un grand cl
 - **Points forts :** simple et efficace, pour débutants
 - **Prix :** environ 16 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0JOUET08)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=puzzle%20friandises%20cache%20cache%20chien)
 
 ## Comment choisir le bon jouet casse-croûte
 

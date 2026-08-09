@@ -24,7 +24,7 @@ Un système de filtration complet : charbon actif, éponge, ioniseur et filtre �
 - **Points forts :** filtration complète, très silencieuse
 - **Prix :** environ 35 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0FONTAIN01)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=fontaine%20a%20eau%20chat%20filtre)
 
 ### 2. Fontaine en acier inoxydable
 
@@ -34,7 +34,7 @@ L'inox limite la prolifération bactérienne, contrairement au plastique. Un cho
 - **Points forts :** hygiène maximale, durable
 - **Prix :** environ 45 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0FONTAIN02)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=fontaine%20a%20eau%20chat%20inox)
 
 ### 3. Fontaine avec détection de mouvement
 
@@ -43,7 +43,7 @@ L'eau ne coule que lorsque votre chat s'approche : elle est toujours fraîche et
 - **Points forts :** ultra économe, eau toujours fraîche
 - **Prix :** environ 50 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0FONTAIN03)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=fontaine%20a%20eau%20chat%20detection%20mouvement)
 
 ### 4. Fontaine à cascade économique
 
@@ -53,7 +53,7 @@ Le modèle le plus simple et le plus abordable : une cascade continue qui oxygè
 - **Points forts :** prix doux, entretien facile
 - **Prix :** environ 20 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0FONTAIN04)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=fontaine%20a%20eau%20chat%20cascade)
 
 ### 5. Fontaine avec réserve pour plusieurs chats
 
@@ -63,7 +63,7 @@ Une grande réserve de 5 litres et plusieurs points d'eau pour les foyers multi-
 - **Points forts :** idéale multi-chats, grande autonomie
 - **Prix :** environ 55 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0FONTAIN05)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=fontaine%20a%20eau%20chat%20grande%20capacite)
 
 ### 6. Fontaine silencieuse pour la nuit
 
@@ -72,7 +72,7 @@ Le modèle le plus silencieux du marché (moins de 20 dB) : votre chat boit la n
 - **Points forts :** quasi inaudible, pompe durable
 - **Prix :** environ 40 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0FONTAIN06)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=fontaine%20a%20eau%20chat%20silencieuse)
 
 ### 7. Fontaine avec filtre visible
 
@@ -81,7 +81,7 @@ Le filtre est transparent : vous voyez en un coup d'œil quand il faut le change
 - **Points forts :** indicateur de filtre, entretien simple
 - **Prix :** environ 30 €
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0FONTAIN07)
+[Voir le prix sur Amazon](https://www.amazon.fr/s?k=fontaine%20a%20eau%20chat%20filtre)
 
 ## Comment choisir une fontaine à eau
 
