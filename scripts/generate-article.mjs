@@ -12,6 +12,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { searchProducts } from "./paapi.mjs";
+import { placeholderToSearch } from "./links.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -83,7 +84,8 @@ function buildOfflineArticle(topic) {
   const products = topic.products ?? [];
   const productLinks = (products.length ? products : topic.amazonProducts ?? [])
     .map((p, i) => {
-      const url = p.asin ? `https://www.amazon.fr/dp/${p.asin}` : p;
+      const raw = p.asin ? `https://www.amazon.fr/dp/${p.asin}` : p;
+      const url = placeholderToSearch(raw, topic.keyword);
       const image = p.image ? `\n\n![${p.title.replace(/"/g, "")}](${p.image})` : "";
       const price = p.price
         ? `\n- **Prix :** environ ${p.price} ${p.currency}`
@@ -91,7 +93,11 @@ function buildOfflineArticle(topic) {
       const rating = p.rating
         ? `\n- **Note clients :** ${p.rating.toFixed(1)}/5 (${p.reviews} avis)`
         : "";
-      return `### ${i + 1}. ${p.title ?? `Produit recommandé ${i + 1}`}${image}
+      const title =
+        p.title ??
+        topic.keyword.replace(/^\w/, (c) => c.toUpperCase()) +
+          (i > 0 ? ` — modèle n°${i + 1}` : "");
+      return `### ${i + 1}. ${title}${image}
 
 Ce produit a été sélectionné pour son excellent rapport qualité-prix dans cette catégorie. Vérifiez les avis clients et les promotions en cours avant de commander.${price}${rating}
 
@@ -138,8 +144,8 @@ async function generateWithAI(topic) {
   );
   const productSection =
     products.length > 0
-      ? products.join("\n")
-      : (topic.amazonProducts ?? []).map((u, i) => `${i + 1}. ${u}`).join("\n");
+      ? products.map((p) => `${p.title} — ${p.price} ${p.currency} — ${p.rating ? `${p.rating}/5 (${p.reviews} avis)` : ""} — https://www.amazon.fr/dp/${p.asin} — image: ${p.image}`).join("\n")
+      : (topic.amazonProducts ?? []).map((u, i) => `${i + 1}. ${placeholderToSearch(u, topic.keyword)}`).join("\n");
 
   const prompt = `Rédige un article SEO complet en français pour un site d'affiliation sur la niche "animaux de compagnie".
 
