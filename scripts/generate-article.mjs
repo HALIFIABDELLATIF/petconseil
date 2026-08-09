@@ -218,22 +218,32 @@ Consignes :
 
 async function main() {
   const forceSlug = process.argv.find((a, i) => process.argv[i - 1] === "--force");
+  const max = Number(process.env.MAX_ARTICLES || 1);
   const queue = readQueue();
 
-  const target = forceSlug
-    ? queue.find((t) => t.slug === forceSlug)
-    : queue.find((t) => !exists(t.slug));
+  if (forceSlug) {
+    const target = queue.find((t) => t.slug === forceSlug);
+    if (!target) {
+      console.log(`Sujet introuvable : ${forceSlug}`);
+      return;
+    }
+    await generate(target, true);
+    return;
+  }
 
-  if (!target) {
+  const pending = queue.filter((t) => !exists(t.slug)).slice(0, max);
+  if (!pending.length) {
     console.log("Aucun article à générer : tous les sujets de la file sont publiés.");
     return;
   }
 
-  if (exists(target.slug) && !forceSlug) {
-    console.log(`L'article ${target.slug} existe déjà.`);
-    return;
+  console.log(`Génération de ${pending.length} article(s)...`);
+  for (const topic of pending) {
+    await generate(topic, false);
   }
+}
 
+async function generate(target, force) {
   await resolveProducts(target);
 
   let body;
@@ -254,8 +264,8 @@ async function main() {
   const file = frontmatter(target) + body.trim() + "\n";
   fs.writeFileSync(path.join(CONTENT_DIR, `${target.slug}.md`), file);
 
-  if (!forceSlug) {
-    writeQueue(queue.filter((t) => t.slug !== target.slug));
+  if (!force) {
+    writeQueue(readQueue().filter((t) => t.slug !== target.slug));
   }
 
   console.log(`✅ Article créé : content/articles/${target.slug}.md`);

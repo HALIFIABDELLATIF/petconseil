@@ -3,6 +3,8 @@ name: Publication automatique
 on:
   schedule:
     - cron: "0 7 * * 1"
+    - cron: "0 7 * * 3"
+    - cron: "0 7 * * 5"
   workflow_dispatch:
 
 permissions:
@@ -23,6 +25,7 @@ jobs:
 
       - name: Générer l'article de la semaine
         env:
+          MAX_ARTICLES: "1"
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
