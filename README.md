@@ -46,6 +46,11 @@ Dans GitHub → Settings → Secrets and variables → Actions :
 |---|---|
 | `OPENAI_API_KEY` | ta clé OpenAI (ou mets `ANTHROPIC_API_KEY`) |
 | `AMAZON_TAG` | ton tag Amazon Associates (ex: `monsite-21`) |
+| `PA_ACCESS_KEY` | ta clé Product Advertising API (choix automatique des produits) |
+| `PA_SECRET_KEY` | ta clé secrète Product Advertising API |
+| `PA_TAG` | le même tag Amazon Associates que `AMAZON_TAG` |
+
+**Clés Product Advertising API (gratuites)** : dans ton espace Amazon Associates → menu **"Product Advertising API"** → *"Manage Your Product Advertising API Access"* → remplit le formulaire (validation sous 1-2 jours). Ces clés permettent au générateur de chercher automatiquement de **vrais produits Amazon** (nom, prix, note, image) pour chaque article, sans aucune action de ta part.
 
 ### 4. Héberger gratuitement sur Vercel
 

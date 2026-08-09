@@ -2,14 +2,16 @@
 /**
  * Générateur d'article automatique.
  *
- * Mode IA : nécessite OPENAI_API_KEY ou ANTHROPIC_API_KEY dans l'environnement.
- * Mode hors-ligne : génère un article structuré à partir du thème (utile sans clé).
+ * Pipeline :
+ *   1. Recherche de VRAIS produits Amazon via la PA-API (si clés configurées)
+ *   2. Génération du contenu via IA (si clé) sinon modèle hors-ligne
  *
  * Usage : node scripts/generate-article.mjs [--force slug]
  */
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { searchProducts } from "./paapi.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -40,7 +42,29 @@ function categoryImage(category) {
   return map[category] ?? "/images/accessoires.svg";
 }
 
+async function resolveProducts(topic) {
+  const hasKeys = process.env.PA_ACCESS_KEY && process.env.PA_SECRET_KEY && process.env.PA_TAG;
+  if (!hasKeys) return;
+
+  console.log(`🔍 Recherche de vrais produits Amazon pour "${topic.keyword}"...`);
+  try {
+    const products = await searchProducts(topic.keyword, topic.category);
+    if (!products.length) {
+      console.warn("⚠️  Aucun produit trouvé via PA-API, placeholders conservés.");
+      return;
+    }
+    topic.products = products.slice(0, 8);
+    topic.amazonProducts = products
+      .slice(0, 8)
+      .map((p) => `https://www.amazon.fr/dp/${p.asin}`);
+    console.log(`  ✓ ${topic.products.length} produits réels trouvés (${products[0].title.slice(0, 40)}...)`);
+  } catch (err) {
+    console.warn(`⚠️  PA-API indisponible (${err.message}). Placeholders conservés.`);
+  }
+}
+
 function frontmatter(topic, { title = topic.title, readingTime = "6 min" } = {}) {
+  const image = topic.products?.[0]?.image ?? categoryImage(topic.category);
   return [
     "---",
     `slug: ${topic.slug}`,
@@ -49,17 +73,30 @@ function frontmatter(topic, { title = topic.title, readingTime = "6 min" } = {})
     `category: "${topic.category}"`,
     `excerpt: "Recommandations et comparatif : ${title} (${topic.category}). Produits testés et sélectionnés pour un excellent rapport qualité-prix."`,
     `readingTime: "${readingTime}"`,
-    `image: ${categoryImage(topic.category)}`,
+    `image: ${image}`,
     "---",
     "",
   ].join("\n");
 }
 
 function buildOfflineArticle(topic) {
-  const productLinks = topic.amazonProducts
-    .map((url, i) => {
-      const rank = ["premier", "deuxième", "troisième", "quatrième", "cinquième"][i] ?? `n°${i + 1}`;
-      return `### ${i + 1}. Produit ${rank} recommandé\n\nCe produit a été sélectionné pour son excellent rapport qualité-prix dans cette catégorie. Vérifiez les avis clients et les promotions en cours avant de commander.\n\n[Voir le prix sur Amazon](${url})\n`;
+  const products = topic.products ?? [];
+  const productLinks = (products.length ? products : topic.amazonProducts ?? [])
+    .map((p, i) => {
+      const url = p.asin ? `https://www.amazon.fr/dp/${p.asin}` : p;
+      const image = p.image ? `\n\n![${p.title.replace(/"/g, "")}](${p.image})` : "";
+      const price = p.price
+        ? `\n- **Prix :** environ ${p.price} ${p.currency}`
+        : "";
+      const rating = p.rating
+        ? `\n- **Note clients :** ${p.rating.toFixed(1)}/5 (${p.reviews} avis)`
+        : "";
+      return `### ${i + 1}. ${p.title ?? `Produit recommandé ${i + 1}`}${image}
+
+Ce produit a été sélectionné pour son excellent rapport qualité-prix dans cette catégorie. Vérifiez les avis clients et les promotions en cours avant de commander.${price}${rating}
+
+[Voir le prix sur Amazon](${url})
+`;
     })
     .join("\n");
 
@@ -95,18 +132,27 @@ Cela varie selon les marques et les vendeurs. Consultez la fiche produit pour le
 }
 
 async function generateWithAI(topic) {
+  const products = (topic.products ?? []).map(
+    (p, i) =>
+      `${i + 1}. ${p.title} — ${p.price} ${p.currency} — ${p.rating ? `${p.rating}/5 (${p.reviews} avis)` : ""} — https://www.amazon.fr/dp/${p.asin} — image: ${p.image}`,
+  );
+  const productSection =
+    products.length > 0
+      ? products.join("\n")
+      : (topic.amazonProducts ?? []).map((u, i) => `${i + 1}. ${u}`).join("\n");
+
   const prompt = `Rédige un article SEO complet en français pour un site d'affiliation sur la niche "animaux de compagnie".
 
 Sujet : ${topic.title}
 Mot-clé cible : ${topic.keyword}
 Catégorie : ${topic.category}
-Produits à recommander (avec leurs liens Amazon) :
-${topic.amazonProducts.map((u, i) => `${i + 1}. ${u}`).join("\n")}
+Produits réels à recommander (nom, prix, note, lien Amazon) :
+${productSection}
 
 Consignes :
 - Structure en markdown.
 - Commence par un titre H1 égal au sujet, puis une intro H2 ("Pourquoi ... est important").
-- Présente chaque produit avec un H3 (nom descriptif), 2-3 lignes d'arguments, des points forts en liste (- **Points forts :** ...), et le lien Amazon.
+- Présente chaque produit avec un H3 (utilise le nom réel du produit), 2-3 lignes d'arguments, des points forts en liste (- **Points forts :** ...), le prix et le lien Amazon en "Voir le prix sur Amazon".
 - Termine par une section "Comment bien choisir" (4 conseils en liste numérotée), une section "Questions fréquentes" (3 questions avec réponses), et une conclusion avec "notre verdict".
 - Utilise des blocs de citation (>) pour les conseils.
 - Longueur : 800 à 1200 mots.
@@ -181,6 +227,8 @@ async function main() {
     console.log(`L'article ${target.slug} existe déjà.`);
     return;
   }
+
+  await resolveProducts(target);
 
   let body;
   const hasKey = process.env.OPENAI_API_KEY || process.env.ANTHROPIC_API_KEY;
