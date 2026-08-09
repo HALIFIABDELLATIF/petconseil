@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const articles = getArticles();
+  const featured = articles.slice(0, 4);
 
   return (
     <>
@@ -18,6 +19,14 @@ export default function Home() {
           Guides testés, comparatifs et recommandations pour chien, chat et
           petits animaux.
         </p>
+        <div className="hero-gallery">
+          {featured.map((a) => (
+            <a key={a.slug} href={`/articles/${a.slug}/`} className="hero-gallery-item">
+              <img src={a.image} alt={a.title} loading="lazy" />
+              <span>{a.category}</span>
+            </a>
+          ))}
+        </div>
       </section>
 
       <section className="categories">

@@ -94,7 +94,8 @@ export function getArticles(): ArticleMeta[] {
   return files
     .map((file) => {
       const raw = fs.readFileSync(path.join(CONTENT_DIR, file), "utf-8");
-      const { data } = matter(raw);
+      const { data, content } = matter(raw);
+      const heroAsin = firstRealAsin(content);
       return {
         slug: data.slug ?? file.replace(/\.md$/, ""),
         title: data.title ?? file,
@@ -102,7 +103,9 @@ export function getArticles(): ArticleMeta[] {
         excerpt: data.excerpt ?? "",
         category: data.category ?? "Animaux",
         readingTime: data.readingTime ?? "5 min",
-        image: data.image ?? defaultImage(data.category ?? "Animaux"),
+        image: heroAsin
+          ? `https://m.media-amazon.com/images/P/${heroAsin}._AC_SL1500_.jpg`
+          : data.image ?? defaultImage(data.category ?? "Animaux"),
       } as ArticleMeta;
     })
     .sort((a, b) => (a.date < b.date ? 1 : -1));
