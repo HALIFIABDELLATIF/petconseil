@@ -76,15 +76,14 @@ Spécialement formulées pour les chiots de grandes races, pour une croissance o
 
 [Voir le prix sur Amazon](https://www.amazon.fr/dp/B0AXYZW23)
 
-### 7. Croquettes Hypoallergéniques Agneau
+### 7. Royal Canin Mini Adult 8+ (seniors petites races)
 
-Pour les chiens allergiques au poulet et au bœuf, une source unique de protéines à base d'agneau.
+Spécialement formulée pour les chiens de petites races à partir de 8 ans : teneur énergétique ajustée et croquette de petite taille adaptée à leur mâchoire.
 
-- **Protéines :** 30%
-- **Points forts :** monoprotéique, 100% adaptée aux allergies
-- **Prix :** environ 5,20 €/kg
+- **Points forts :** adaptée aux seniors, taille de croquette parfaite
+- **Marque :** Royal Canin
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B00BCDEF34)
+[Voir le prix sur Amazon](https://www.amazon.fr/dp/B00GWF771M)
 
 ### 8. Croquettes Sterilised Chat & Chien
 
@@ -106,15 +105,14 @@ Un format économique pour les chiens gourmands, avec un fort pouvoir rassasiant
 
 [Voir le prix sur Amazon](https://www.amazon.fr/dp/B0DEFGH56)
 
-### 10. Croquettes Bio Certifiées
+### 10. Royal Canin Breed Chihuahua
 
-Des ingrédients issus de l'agriculture biologique, sans OGM, pour les propriétaires exigeants.
+Une alimentation dédiée à la race Chihuahua : croquettes miniatures adaptées à leur mâchoire, riche en protéines pour entretenir leur masse musculaire.
 
-- **Protéines :** 27%
-- **Points forts :** ingrédients 100% bio certifiés
-- **Prix :** environ 6,50 €/kg
+- **Points forts :** adaptée à la race, appétence élevée
+- **Marque :** Royal Canin
 
-[Voir le prix sur Amazon](https://www.amazon.fr/dp/B0EFGHIJ67)
+[Voir le prix sur Amazon](https://www.amazon.fr/dp/B000T5MP2M)
 
 ## Comment choisir la bonne croquette pour votre chien
 

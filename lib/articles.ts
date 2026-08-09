@@ -31,7 +31,7 @@ export interface Article extends ArticleMeta {
 
 const CONTENT_DIR = path.join(process.cwd(), "content", "articles");
 
-export const AMAZON_TAG = process.env.AMAZON_TAG || "petconseil-20";
+export const AMAZON_TAG = process.env.AMAZON_TAG || "petconseil-21";
 
 function replaceAmazonTag(url: string): string {
   if (!url.includes("amazon.")) return url;
