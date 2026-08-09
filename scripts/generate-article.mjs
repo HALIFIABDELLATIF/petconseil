@@ -186,7 +186,12 @@ async function main() {
   const hasKey = process.env.OPENAI_API_KEY || process.env.ANTHROPIC_API_KEY;
   if (hasKey) {
     console.log(`Génération IA de "${target.title}"...`);
-    body = await generateWithAI(target);
+    try {
+      body = await generateWithAI(target);
+    } catch (err) {
+      console.warn(`⚠️  IA indisponible (${err.message}). Utilisation du modèle hors-ligne.`);
+      body = buildOfflineArticle(target);
+    }
   } else {
     console.log(`Mode hors-ligne (aucune clé IA) : génération modèle pour "${target.title}".`);
     body = buildOfflineArticle(target);
