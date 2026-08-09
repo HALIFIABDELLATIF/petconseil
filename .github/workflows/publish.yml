@@ -23,6 +23,9 @@ jobs:
       - name: Installer les dépendances
         run: npm install --no-audit --no-fund
 
+      - name: Recharger la file d'articles si nécessaire
+        run: node scripts/refill-queue.mjs
+
       - name: Générer l'article de la semaine
         env:
           MAX_ARTICLES: "1"
