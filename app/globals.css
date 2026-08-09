@@ -256,6 +256,46 @@ main section h2 {
   border-radius: 0 8px 8px 0;
 }
 
+.amazon-product {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+.amazon-product-image {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.amazon-product figcaption {
+  flex: 1;
+}
+
+.amazon-product-link {
+  display: inline-block;
+  background: #ff9900;
+  color: #111;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.amazon-product-link:hover {
+  background: #e68a00;
+}
+
 .footer {
   border-top: 1px solid var(--border);
   margin-top: 48px;

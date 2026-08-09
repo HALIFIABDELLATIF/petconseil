@@ -52,6 +52,27 @@ function rewriteAmazonLinks(html: string): string {
   );
 }
 
+/**
+ * Remplace les liens "Voir le prix sur Amazon" vers une fiche produit
+ * (/dp/{ASIN}) par une carte produit avec l'image Amazon correspondante.
+ *
+ * Convention d'image fiable, sans scraping : https://m.media-amazon.com/images/P/{ASIN}...
+ */
+function amazonProductCard(html: string): string {
+  return html.replace(
+    /<a href="(https?:\/\/(?:www\.)?amazon\.[^"]*\/dp\/([A-Z0-9]{10}))(?:\?[^"]*)?">([^<]*Voir le prix sur Amazon[^<]*)<\/a>/gi,
+    (_match, url: string, asin: string, label: string) =>
+      `<figure class="amazon-product">
+  <a href="${url}" target="_blank" rel="nofollow sponsored noopener">
+    <img class="amazon-product-image" src="https://m.media-amazon.com/images/P/${asin}._AC_SL1500_.jpg" alt="Voir le produit sur Amazon" loading="lazy" width="300" height="300" />
+  </a>
+  <figcaption>
+    <a class="amazon-product-link" href="${url}" target="_blank" rel="nofollow sponsored noopener">${label}</a>
+  </figcaption>
+</figure>`,
+  );
+}
+
 export function getArticles(): ArticleMeta[] {
   if (!fs.existsSync(CONTENT_DIR)) return [];
   const files = fs.readdirSync(CONTENT_DIR).filter((f) => f.endsWith(".md"));
@@ -78,7 +99,7 @@ export async function getArticle(slug: string): Promise<Article | null> {
   const raw = fs.readFileSync(file, "utf-8");
   const { data, content } = matter(raw);
   const processed = await remark().use(remarkHtml).process(content);
-  const contentHtml = rewriteAmazonLinks(processed.toString());
+  const contentHtml = rewriteAmazonLinks(amazonProductCard(processed.toString()));
   return {
     slug: data.slug ?? slug,
     title: data.title ?? slug,
