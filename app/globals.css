@@ -210,9 +210,12 @@ main section h2 {
   width: 100%;
   height: auto;
   max-height: 320px;
-  object-fit: cover;
+  object-fit: contain;
+  background: #fafafa;
+  border: 1px solid var(--border);
   border-radius: 12px;
   margin: 16px 0 24px;
+  padding: 16px;
 }
 
 .article .meta {

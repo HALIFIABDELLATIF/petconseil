@@ -21,6 +21,21 @@ const DEFAULT_IMAGES: Record<string, string> = {
   Accessoires: "/images/accessoires.svg",
 };
 
+/**
+ * Extrait le premier ASIN réel présent dans un contenu markdown,
+ * pour afficher la photo produit Amazon en couverture d'article.
+ */
+function firstRealAsin(content: string): string | null {
+  const seen = new Set<string>();
+  for (const m of content.matchAll(/amazon\.fr\/dp\/([A-Z0-9]{10})/gi)) {
+    const asin = m[1];
+    if (seen.has(asin)) continue;
+    seen.add(asin);
+    if (!/\d{2}$/.test(asin)) return asin;
+  }
+  return null;
+}
+
 export function defaultImage(category: string): string {
   return DEFAULT_IMAGES[category] ?? "/images/accessoires.svg";
 }
@@ -100,6 +115,7 @@ export async function getArticle(slug: string): Promise<Article | null> {
   const { data, content } = matter(raw);
   const processed = await remark().use(remarkHtml).process(content);
   const contentHtml = rewriteAmazonLinks(amazonProductCard(processed.toString()));
+  const heroAsin = firstRealAsin(content);
   return {
     slug: data.slug ?? slug,
     title: data.title ?? slug,
@@ -107,7 +123,9 @@ export async function getArticle(slug: string): Promise<Article | null> {
     excerpt: data.excerpt ?? "",
     category: data.category ?? "Animaux",
     readingTime: data.readingTime ?? "5 min",
-    image: data.image ?? defaultImage(data.category ?? "Animaux"),
+    image: heroAsin
+      ? `https://m.media-amazon.com/images/P/${heroAsin}._AC_SL1500_.jpg`
+      : data.image ?? defaultImage(data.category ?? "Animaux"),
     contentHtml,
   };
 }
