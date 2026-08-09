@@ -1,0 +1,28 @@
+{
+  "name": "affiliation-pets",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site d'affiliation automatique - niche animaux de compagnie",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate:article": "node scripts/generate-article.mjs"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "^14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.10",
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.6.2",
+    "vercel": "^58.9.0"
+  }
+}

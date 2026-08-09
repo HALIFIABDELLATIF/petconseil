@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f3dc"/>
+      <stop offset="100%" stop-color="#b7e4c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="650" cy="90" r="140" fill="#ffffff" opacity="0.25"/>
+  <circle cx="120" cy="380" r="180" fill="#ffffff" opacity="0.2"/>
+  <rect x="240" y="110" width="320" height="230" rx="20" fill="#ffffff" opacity="0.9"/>
+  <text x="400" y="225" font-size="150" text-anchor="middle">🍖</text>
+  <text x="400" y="310" font-size="30" font-weight="700" text-anchor="middle" fill="#2d6a4f" font-family="Arial, sans-serif">Croquettes Chien</text>
+  <text x="400" y="345" font-size="18" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif">Meilleur choix 2026</text>
+</svg>
