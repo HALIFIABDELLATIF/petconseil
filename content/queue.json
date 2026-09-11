@@ -1,15 +1,6 @@
 {
   "topics": [
     {
-      "slug": "laisse-chien-extensible-2026",
-      "title": "Les meilleurs laisses extensibles en 2026",
-      "category": "Chien",
-      "keyword": "laisse chien extensible",
-      "amazonProducts": [
-        "https://www.amazon.fr/dp/B0REFILL03"
-      ]
-    },
-    {
       "slug": "sac-a-dos-chien-2026",
       "title": "Les meilleurs sacs de transport en 2026",
       "category": "Chien",
@@ -38,6 +29,78 @@
     },
     {
       "slug": "shampooing-chien-demelant-2026",
+      "title": "Les meilleurs shampoings en 2026",
+      "category": "Chien",
+      "keyword": "shampooing chien démêlant",
+      "amazonProducts": [
+        "https://www.amazon.fr/dp/B0REFILL07"
+      ]
+    },
+    {
+      "slug": "gamelle-anti-glouton-chien-2026",
+      "title": "Les meilleurs gamelle anti-glouton en 2026",
+      "category": "Chien",
+      "keyword": "gamelle anti glouton chien",
+      "amazonProducts": [
+        "https://www.amazon.fr/dp/B0REFILL00"
+      ]
+    },
+    {
+      "slug": "harnais-chien-2026",
+      "title": "Les meilleurs harnais de traction en 2026",
+      "category": "Chien",
+      "keyword": "harnais chien",
+      "amazonProducts": [
+        "https://www.amazon.fr/dp/B0REFILL01"
+      ]
+    },
+    {
+      "slug": "collier-chien-etrangleur-2026",
+      "title": "Les meilleurs colliers d'éducation en 2026",
+      "category": "Chien",
+      "keyword": "collier chien étrangleur",
+      "amazonProducts": [
+        "https://www.amazon.fr/dp/B0REFILL02"
+      ]
+    },
+    {
+      "slug": "laisse-chien-extensible-2026-2",
+      "title": "Les meilleurs laisses extensibles en 2026",
+      "category": "Chien",
+      "keyword": "laisse chien extensible",
+      "amazonProducts": [
+        "https://www.amazon.fr/dp/B0REFILL03"
+      ]
+    },
+    {
+      "slug": "sac-a-dos-chien-2026-2",
+      "title": "Les meilleurs sacs de transport en 2026",
+      "category": "Chien",
+      "keyword": "sac à dos chien",
+      "amazonProducts": [
+        "https://www.amazon.fr/dp/B0REFILL04"
+      ]
+    },
+    {
+      "slug": "brosse-chien-poils-courts-2026-2",
+      "title": "Les meilleurs brosses poils courts en 2026",
+      "category": "Chien",
+      "keyword": "brosse chien poils courts",
+      "amazonProducts": [
+        "https://www.amazon.fr/dp/B0REFILL05"
+      ]
+    },
+    {
+      "slug": "coupe-griffe-chien-2026-2",
+      "title": "Les meilleurs coupe-griffes en 2026",
+      "category": "Chien",
+      "keyword": "coupe griffe chien",
+      "amazonProducts": [
+        "https://www.amazon.fr/dp/B0REFILL06"
+      ]
+    },
+    {
+      "slug": "shampooing-chien-demelant-2026-2",
       "title": "Les meilleurs shampoings en 2026",
       "category": "Chien",
       "keyword": "shampooing chien démêlant",
